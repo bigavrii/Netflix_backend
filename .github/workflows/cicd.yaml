@@ -10,8 +10,8 @@ jobs:
 
     steps:
     - name: Check out the repository
-      uses: actions/checkout@2
+      uses: actions/checkout@4
 
-    - name: Docker build
+    - name: Print system info
       run: |
         hostnamectl
