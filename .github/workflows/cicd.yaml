@@ -12,6 +12,6 @@ jobs:
     - name: Check out the repository
       uses: actions/checkout@v4
 
-    - name: Print system info
+    - name: Docker build
       run: |
-        hostnamectl
+        docker build -netflix_backend:latest .
