@@ -20,5 +20,5 @@ jobs:
         docker build -t netflix_backend:latest .
 
     - name: Docker build
-      #run: |
+      run: |
         docker build -t netflix_backend:latest .
