@@ -41,6 +41,9 @@ jobs:
     - name: Check out the repository
       uses: actions/checkout@v2
 
+    - name: Debug AWS identity
+      run: aws sts get-caller-identity
+
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v4
@@ -65,5 +68,5 @@ jobs:
 
     - name: Docker push
       run: |
-        docker tag netflix_backend:latest 402876653268.dkr.ecr.us-east-1.amazonaws.com/netflix_backend:${GITHUB_RUN_NUMBER}
-        docker push 402876653268.dkr.ecr.us-east-1.amazonaws.com/netflix_backend:${GITHUB_RUN_NUMBER}
+        docker tag netflix_backend:latest 402876653268.dkr.ecr.us-east-2.amazonaws.com/netflix_backend:${GITHUB_RUN_NUMBER}
+        docker push 402876653268.dkr.ecr.us-east-2.amazonaws.com/netflix_backend:${GITHUB_RUN_NUMBER}
