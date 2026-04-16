@@ -1,31 +1,3 @@
-# name: Build and push docker image
-
-# on:
-#   push:
-#     branches: [ main ]
-
-# jobs:
-#   build-and-push:
-#     runs-on: ubuntu-latest
-
-#     steps:
-#     - name: Check out the repository
-#       uses: actions/checkout@v4
-
-#     - name: docker build
-#       run: |
-#         echo "${{ vars.APPLICATION_PROPERTIES }}" > application.properties
-#         ls -la
-#         cat application.properties
-#         docker build -t netflix_backend:latest .
-
-#     - name: Docker build
-#       run: |
-#         docker build -t netflix_backend:latest .
-
-
-
-
 
 name: Build and push docker image
 
